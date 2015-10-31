@@ -45,19 +45,10 @@ class Command(BaseCommand):
             s = Snippet(title=args[0])
             if options['header']:
                 s.header = options['header'].read()
-#            else:
-#                with open('farinha/header.txt', 'r') as f:
-#                    s.header = f.read()
             if options['body']:
                 s.body = options['body'].read()
-#            else:
-#                with open('farinha/body.txt', 'r') as f:
-#                    s.body = f.read()
             if options['footer']:
                 s.footer = options['footer'].read()
-#            else:
-#                with open('farinha/footer.txt', 'r') as f:
-#                    s.footer = f.read()
             s.save()
         else:
             self.stdout.write("You need to provide at least the snippet's \

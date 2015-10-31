@@ -36,7 +36,7 @@ class Command(BaseCommand):
 
                     f.close()
 
-                    os.chmod(f.name, 0744) 
+                    os.chmod(f.name, 0744)
 
                     local(f.name)
 
